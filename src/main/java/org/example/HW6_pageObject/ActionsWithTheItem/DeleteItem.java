@@ -21,7 +21,7 @@ public class DeleteItem extends AbstractPage {
 
     public DeleteItem clickDelete(){
         try {
-            Thread.sleep(1000l);
+            Thread.sleep(2000l);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

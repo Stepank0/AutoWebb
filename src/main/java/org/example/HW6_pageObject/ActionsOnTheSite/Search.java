@@ -1,5 +1,6 @@
 package org.example.HW6_pageObject.ActionsOnTheSite;
 
+import io.qameta.allure.Step;
 import org.example.HW6_pageObject.AbstractPage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -29,7 +30,7 @@ public class Search extends AbstractPage {
         return this;
     }
 
-
+    @Step("Экшен действие с поиском товара.")
     public void  actionSearch(String item){
         Actions actions = new Actions(getDriver());
         actions.click(searchButton)

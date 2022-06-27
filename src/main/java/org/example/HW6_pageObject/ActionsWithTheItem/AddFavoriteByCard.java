@@ -13,10 +13,10 @@ import java.time.Duration;
 
 public class AddFavoriteByCard extends AbstractPage {
 
-    @FindBy(xpath = ".//div[@data-item='66061']")
+        @FindBy(xpath = ".//div[@data-item='66959']")
     private WebElement itemCard;
 
-    @FindBy(xpath = ".//div[@data-item='66061']//i[@class='far fa-heart']")
+    @FindBy(xpath = ".//div[@data-item='66959']//i[@class='far fa-heart']")
     private WebElement buttonFavorite;
 
     @FindBy(xpath = ".//div[@id='basket-popap']/button")
@@ -33,6 +33,7 @@ public class AddFavoriteByCard extends AbstractPage {
     public void addItemToFavorite(){
         Actions actions = new Actions(getDriver());
         actions.moveToElement(itemCard)
+                .pause(1000l)
                 .click(buttonFavorite)
                 .build()
                 .perform();

@@ -48,17 +48,4 @@ public class AddItem extends AbstractPage {
                 scrollUp.click();
     }
 
-//    public void scroll(){
-//        new WebDriverWait(getDriver(), Duration.ofMillis(7000l))
-//                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.page-up.show")));
-//        scrollUp.click();
-//        // By.cssSelector("div.page-up.show") если вместо css вставляю локатор
-//        // By.cssSelector(scrollUp) то компилятор ругается
-//    }
-
-//     public AddItem clickScrollUp(){
-//        scrollUp.click();
-//        return this;
-//    }
-
 }
